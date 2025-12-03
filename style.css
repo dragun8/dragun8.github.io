@@ -400,3 +400,11 @@ footer {
     .hero h1 { font-size: 2.5rem; }
     .hero h1 span { font-size: 1.8rem; }
 }
+
+.project-image {
+    width: 100%;           /* 카드 너비에 맞게 자동 조정 */
+    max-height: 240px;     /* 너무 세로로 길어지지 않게 제한 */
+    object-fit: cover;     /* 비율 유지 + 상자 안에서 잘 맞게 */
+    border-radius: 12px;   /* 카드 디자인과 동일한 둥근 처리 */
+    display: block;
+}
