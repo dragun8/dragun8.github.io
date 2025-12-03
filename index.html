@@ -1,133 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>배용건 포트폴리오</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배용건 | AI & Web Developer</title>
+    <!-- Google Fonts (Pretendard - 깔끔한 고딕체) -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- Font Awesome (아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">YongGeon.Dev</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>배용건 개발자 포트폴리오</h1>
-    <p>무한한 상상력 개발자, 포기를 모르는 무한한 도전 개발자</p>
-    <div class="hero-buttons">
-      <a href="mailto:rjslsla12@naver.com">Email</a>
-      <a href="https://github.com/dragun8" target="_blank">GitHub</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">AI & Web Developer</span>
+            <h1>배용건<br><span>무한한 상상력을 코드로</span></h1>
+            <p>포기를 모르는 끈기로 사람과 기술을 연결하는 개발자입니다.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                <a href="https://github.com/dragun8" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- About -->
-  <section class="section about">
-    <h2>About Me</h2>
-    <p>
-      SSAFY에서 AI·웹 개발을 학습하며, 이미지 기반 질의응답 AI 챌린지를 통해
-      데이터 전처리, 모델 실험 자동화, 오류 분석 등 기술적 문제를 깊게 파고드는 역량을 키웠습니다.
-      또한 다양한 팀 프로젝트에서 프론트엔드·백엔드를 경험하며 사용자의 문제를 해결하는 실행력을 쌓았습니다.<br><br>
+    <!-- About -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>SSAFY</strong>에서 AI·웹 개발을 학습하며, 이미지 기반 질의응답 AI 챌린지를 통해 
+                        데이터 전처리, 모델 실험 자동화, 오류 분석 등 기술적 깊이를 더했습니다.
+                    </p>
+                    <p>
+                        <strong>나이키에서 5년간 근무</strong>하며 얻은 기획력과 소통 능력은 저의 가장 큰 자산입니다. 
+                        복잡한 문제일수록 끝까지 파고들어 해결하는 태도를 지향합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      나이키에서 5년간 근무하며 기획·실행 경험과 협업 능력을 갖추었고,
-      이를 바탕으로 사람과 기술을 연결하는 개발자로 성장 중입니다.
-      복잡한 문제일수록 끝까지 분석하고 해결하는 태도를 가장 중요하게 생각합니다.
-    </p>
-  </section>
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skill-category">
+                <h3>Backend & AI</h3>
+                <div class="skill-box">
+                    <span>Python</span> <span>Django</span> <span>DRF</span> <span>FastAPI</span> 
+                    <span>AI Modeling</span> <span>Docker</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-box">
+                    <span>JavaScript</span> <span>Vue.js</span> <span>HTML/CSS</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <section class="section skills">
-    <h2>Skills</h2>
-    <div class="skill-box">
-      <p>JavaScript</p>
-      <p>Vue.js</p>
-      <p>HTML / CSS</p>
-      <p>Python</p>
-      <p>Django</p>
-      <p>DRF</p>
-      <p>FastAPI</p>
-      <p>AI 모델링</p>
-      <p>Docker</p>
-    </div>
-  </section>
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>AI Challenge – 멀티모달 질의응답 시스템</h3>
+                    <p class="project-sub">이미지·텍스트 기반 정보 추출 및 검색 AI</p>
+                    <div class="tag-box">
+                        <span>Python</span> <span>FastAPI</span> <span>Multimodal</span> <span>Qwen-VL</span> <span>Docker</span>
+                    </div>
+                    <ul class="project-detail">
+                        <li>Qwen2-VL 기반 멀티모달 입력 처리 (이미지 + 텍스트)</li>
+                        <li>데이터 전처리 최적화 및 실험 자동 로깅 시스템 설계</li>
+                        <li>하이퍼파라미터 조정 및 오류 분석을 통한 성능 개선</li>
+                    </ul>
+                </div>
+                <div class="project-preview">
+                    <!-- iframe 스타일링을 위해 div로 감쌈 -->
+                    <div class="iframe-container">
+                        <iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/dragun8/dragun8.github.io/master/AI_Challenge_Team_2_발표자료.pptx?raw=1&embedded=true" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Projects -->
-  <section class="section projects">
-    <h2>Projects</h2>
+            <!-- Project 2 -->
+            <div class="project-card reverse">
+                <div class="project-info">
+                    <h3>식자재 구매 추천 서비스</h3>
+                    <p class="project-sub">사용자 맞춤형 식자재 구매 추천 웹 서비스</p>
+                    <div class="tag-box">
+                        <span>Vue.js</span> <span>Django</span> <span>DRF</span> <span>JWT</span>
+                    </div>
+                    <ul class="project-detail">
+                        <li>Vue SPA 기반 UI/UX 설계 및 구현</li>
+                        <li>Django·DRF를 활용한 식자재 CRUD API 구축</li>
+                        <li>JWT 인증 및 사용자 소비 패턴 분석 알고리즘</li>
+                    </ul>
+                    <a class="btn btn-small" href="https://github.com/dragun8" target="_blank">GitHub Repository <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-preview placeholder">
+                    <!-- 이미지가 없다면 아이콘으로 대체 -->
+                    <i class="fas fa-shopping-basket"></i>
+                    <p>Project Screenshot Placeholder</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- AI Challenge Project -->
-    <div class="project-card">
-      <h3>AI Challenge – 멀티모달 질의응답 AI 시스템</h3>
-      <p class="project-sub">이미지·텍스트 기반 정보 추출 및 검색 AI</p>
+    <!-- Experience -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">5년 2개월</div>
+                    <div class="timeline-content">
+                        <h3>나이키 리테일 · 매장 운영</h3>
+                        <p>프로모션 기획 및 실행, 고객/직원 커뮤니케이션, 매장 운영 지표 분석</p>
+                        <p class="desc">상황을 빠르게 파악하고 실행하는 능력, 팀 협업 리더십을 갖추었습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <ul class="project-detail">
-        <li>Qwen2-VL 기반 멀티모달 입력 처리(이미지 + 텍스트)</li>
-        <li>데이터 전처리 최적화 및 실험 자동 로깅 시스템 설계</li>
-        <li>하이퍼파라미터 조정 및 오류 분석을 통한 모델 성능 개선</li>
-        <li>Docker Compose 기반 모델 API 환경 구축</li>
-      </ul>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p>새로운 도전을 함께할 준비가 되어 있습니다.</p>
+            <div class="contact-links">
+                <a href="mailto:rjslsla12@naver.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> rjslsla12@naver.com
+                </a>
+                <a href="https://github.com/dragun8" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i> github.com/dragun8
+                </a>
+            </div>
+        </div>
+    </section>
 
-      <div class="tag-box">
-        <span>Python</span>
-        <span>FastAPI</span>
-        <span>Multimodal</span>
-        <span>Qwen-VL</span>
-        <span>Docker</span>
-      </div>
-
-      <iframe
-        src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/dragun8/dragun8.github.io/master/AI_Challenge_Team_2_발표자료.pptx?raw=1&embedded=true"
-        style="width:100%; height:600px; border:1px solid #ddd; border-radius:8px;"
-        frameborder="0">
-      </iframe>
-    </div>
-
-    <!-- 식자재 구매 추천 서비스 -->
-    <div class="project-card">
-      <h3>구매 추천 사이트</h3>
-      <p class="project-sub">사용자 식자재 구매 추천하는 웹 서비스</p>
-
-      <ul class="project-detail">
-        <li>Vue SPA 기반 UI/UX 설계 및 주요 컴포넌트 구현</li>
-        <li>Django·DRF로 식자재 CRUD</li>
-        <li>JWT 인증을 통한 사용자 맞춤형 서비스 제공</li>
-        <li>식자재 소비 패턴 분석 및 리마인더 기능 설계</li>
-      </ul>
-
-      <div class="tag-box">
-        <span>Vue</span>
-        <span>Django</span>
-        <span>DRF</span>
-        <span>JWT</span>
-        <span>REST API</span>
-      </div>
-
-      <a class="project-btn" href="https://github.com/dragun8" target="_blank">GitHub 보기</a>
-    </div>
-
-  </section>
-
-  <!-- Experience -->
-  <section class="section experience">
-    <h2>Experience</h2>
-    <p>
-      <strong>나이키 리테일·매장 운영</strong> (5년 2개월)<br>
-      - 프로모션 기획 및 실행  
-      - 고객/직원 커뮤니케이션  
-      - 매장 운영 지표 분석 및 개선  
-      <br><br>
-      이러한 경험을 통해 상황을 빠르게 파악하고 실행하는 능력,
-      그리고 팀 협업을 효율적으로 이끄는 능력을 갖추게 되었습니다.
-    </p>
-  </section>
-
-  <!-- Contact -->
-  <section class="section contact">
-    <h2>Contact</h2>
-    <p>Email: rjslsla12@naver.com</p>
-    <p>GitHub: https://github.com/dragun8</p>
-  </section>
-
+    <footer>
+        <p>&copy; 2025 Bae Yong Geon. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
-
-
