@@ -296,6 +296,7 @@ nav a:hover {
   opacity: 0.5;
 }
 
+
 /* Experience Timeline */
 .timeline-item {
   display: flex;
@@ -412,6 +413,7 @@ footer {
   color: var(--text-sub);
   margin-bottom: 40px;
   max-width: 90%;
+  margin-left: 0;
 }
 
 /* 이미지 영역 스타일 */
