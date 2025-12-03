@@ -1,0 +1,210 @@
+/* -------------------------
+   GLOBAL
+-------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Layout */
+.section {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #111;
+  padding-left: 12px;
+}
+
+/* -------------------------
+   HERO SECTION
+-------------------------- */
+.hero {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 0 8px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+}
+
+.hero-buttons a:hover {
+  background: #333;
+  transform: translateY(-3px);
+}
+
+/* -------------------------
+   ABOUT SECTION
+-------------------------- */
+.about p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.75;
+}
+
+/* -------------------------
+   SKILLS
+-------------------------- */
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-box p {
+  background: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.skill-box p:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  transform: translateY(-3px);
+}
+
+/* -------------------------
+   PROJECTS
+-------------------------- */
+.project-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 40px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0px 12px 30px rgba(0,0,0,0.08);
+  transform: translateY(-6px);
+}
+
+.project-sub {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.project-detail {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.project-detail li {
+  margin-bottom: 6px;
+}
+
+.tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag-box span {
+  background: #f4f4f4;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid #ddd;
+  color: #444;
+  transition: 0.2s;
+}
+
+.tag-box span:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.25s;
+}
+
+.project-btn:hover {
+  background: #333;
+}
+
+/* -------------------------
+   EXPERIENCE
+-------------------------- */
+.experience p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* -------------------------
+   CONTACT
+-------------------------- */
+.contact p {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+/* -------------------------
+   RESPONSIVE
+-------------------------- */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .section {
+    padding: 0 15px;
+  }
+}
